@@ -16,7 +16,7 @@ public class Obstacle : MonoBehaviour
 
     private void FixedUpdate()
     {
-        //Make sure the Y is frozen or the gravity scale is 0, otherwise it still falls.
+        //Make sure the Y velocity is frozen or the gravity scale is 0, otherwise it still falls.
         rb.velocity = new Vector2(-moveSpeed, 0);
     }
 }
